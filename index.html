@@ -1,0 +1,151 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kryptologia</title>
+  <meta name="keywords" content="šifrovanie, bezpečnosť.">
+  <meta name="description" content="Jednoduché a silné šifrovanie pre organizácie všetkých veľkostí.">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="./js/coding.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content-wrapper">
+  <header class="header header--bg">
+    <div class="container">
+      <nav class="navbar">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span> 
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+          </ul>
+        </div>
+      </nav>
+      <div class="header__content text-center">
+        <span class="header__content__block">AHOJ!</span>
+        <h1 class="header__content__title">TU MÔŽEŠ ZAŠIFROVAŤ SVOJ TEXT</h1>
+        <ul class="header__content__sub-title">
+          <li>BEZPEČNOSŤ<span class="padding">&#45;</span></li>
+          <li>JEDNODUCHOSŤ<span class="padding">&#45;</span></li>
+          <li>SÚKROMNOSŤ</li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <section class="about">
+    <div class="container about__container--narrow">
+      <div class="page-section">
+        <h2 class="page-section__title">AKO ZAČAŤ POUŽÍVAŤ APLIKÁCIU?</h2>
+          <img class="page-section__title-style" src="assets/images/title-style.png" alt="">
+          <p class="page-section__paragraph">Naše riešenie zabezpečí to, že sa Vaše citlivé a kritické firemné údaje nedostanú mimo firemnú sieť. </p>
+          <div class="row gutters-80">
+            <div class="col-md-4">
+              <div class="about__image">
+                <img src="assets/images/about-me-image.png" alt="">
+              </div>
+            </div>
+            <div class="col-md-8 about__content">
+              <p class="about__description">
+<p>PRE ŠIFROVANIE:</p>
+               <ol>
+              <li>Text určený na šifrovanie napíšte do prvého textového poľa.</li>
+              <li>Zvoľte si parameter logistického zobrazenia λ z intervalu (3.57; 4), a napíšte ho do políčka [λ = ] vo formate *.**. </li>
+<li>Zvoľte si počiatočnú hodnotu z intervalu (0; 1) a napíšte jú do políčka [Počiatočná hodnota  = ] vo formate *.***. </li>
+        <li>Kliknite na [Zašifrovať].</li>
+              </ol>
+<p>PRE DEŠIFROVANIE:</p>	
+             <ol>
+              <li>Prijatý, šifrovaný text nakopírujte do prvého textového poľa.</li>
+              <li>Správny parameter logistického zobrazenia λ napíšte do políčka [λ =].</li>
+<li>Počiatočnú hodnotu napíšte do políčka [Počiatočná hodnota  = ].</li>
+            <li>Kliknite na [Dešifrovať].</li>
+           </ol>
+           </p>
+              <div class="row">
+                <div class="textEreaDiv">
+                  <textarea id="inputText" class="textarea" cols="40" rows="10"></textarea>
+                  <button id="btnCloneTextereaValue" class="button button--colorful button--flex"><-</button>
+                  <textarea id="outputText" class="textarea" cols="40" rows="10" readOnly></textarea>
+                </div> 
+                <div class="div div--container">
+                  <div class="div div--input">
+                    <p>λ = </p>
+                    <input id="rValue" type="text" placeholder="z intervalu (3.75; 4)" pattern="[3]{1}.[6-9]{1}+\d{0,}" >
+                  </div>
+                  <div class="div div--input">
+                      <p>Počiatočná hodnota=</p>
+                      <input id="startValue" type="text" placeholder="z intervalu (0; 1)" pattern="[0]{1}.\d{1,}" >
+                    </div>  
+                </div>
+                <div class="div div--button div--container">
+                  <div class="col-md-4 div div--button">
+                    <button id="encode" class="button button--colorful button--margin" >Zašifrovať</button>
+                  </div>
+                  <div class="col-md-4 div div--button">
+                    <button id="decode" class="button button--colorful button--margin" >Dešifrovať</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="skill skill--bg">
+    <div class="container skill__container--narrow">.
+      <div class="page-section">
+        <h2 class="page-section__title page-section__title--white">NA ČO JE TO DOBRÉ?</h2>
+        <img class="page-section__title-style" src="assets/images/title-style-white.png" alt="">
+        <p class="page-section__paragraph page-section__paragraph--white">Ak potrebujete poslať druhej osobe informáciu, ale si neželáte, aby sa o jej obsahu dozvedela tretia osoba, pôvodnú informáciu musíte utajiť (zašifrovať). Emailom jej pošlite šifrovaný text a nejakým iným spôsobom, napr. SMS, alebo telefonicky jej oznámte aj kľuč, ktorým bol text zašifrovaný. Nezabudnite mu oznámiť aj adresu tejto internetovej stránky, lebo iba na tej stránke môže dešifrovať vašu správu.</p>
+        
+    </div>
+  </section>
+
+  <section class="service">
+    <div class="container">
+      <div class="page-section">
+        <h2 class="page-section__title">JE TO SPOĽAHLIVÉ A BEZPEČNÉ?</h2>
+        <img class="page-section__title-style" src="assets/images/title-style.png" alt="">
+        <div class="row gutters-70">
+          <div class="col-md-4">
+            <div class="thumbnail text-center">
+              <img src="assets/images/logo-design.png" alt="">
+              <h4 class="service__single-section__title">ŠIFROVACÍ ALGORITMUS </h4>
+              <p class="service__single-section__paragraph">je dostatočne silný, a teda je bezpečný.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail text-center">
+              <img src="assets/images/website-design.png" alt="">
+              <h4 class="service__single-section__title">PREHĽADNÁ WEB STRÁNKA</h4>
+              <p class="service__single-section__paragraph">umožňuje jednoduché využitie aplikácií.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail text-center">
+              <img src="assets/images/support.png" alt="">
+              <h4 class="service__single-section__title">BEZPEČNOSŤ KOMUNIKÁCIE</h4>
+              <p class="service__single-section__paragraph">je zabezpečená na vysokej úrovni.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer footer--bg">
+    <div class="container text-center">
+      <ul class="footer__contact-information">
+        <li><a href="mailto:viktoriia.boichuk.@student.tuke.sk"><i class="material-icons">email</i> viktoriia.boichuk.@student.tuke.sk</a></li>
+        <li><a href="#"><i class="material-icons">location_on</i> Prešov</a></li>
+      </ul>
+    </div>
+</div>
+</body>
+</html>  
